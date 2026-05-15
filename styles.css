@@ -1,0 +1,530 @@
+/* === Réinitialisation des styles par défaut === */
+* {
+  margin: 0;            /* Réinitialise les marges */
+  padding: 0;           /* Réinitialise les paddings */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* === Styles généraux === */
+body {
+  font-family: Arial, sans-serif; /* Police de base */
+  background-color: lightgray;    /* Couleur de fond */
+  line-height: 1.6;               /* Hauteur de ligne pour le texte */
+}
+
+/* Ajoutez d'autres styles ici */
+/* === Paragraphes === */
+p {
+  color: #333;           /* Gris foncé */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* === Mise en évidence === */
+.highlight {
+  color: orange;         /* Orange */
+  font-weight: bold;
+}
+
+/* === Boutons === */
+.btn {
+  background-color: darkblue; /* Bleu foncé */
+  color: white;               /* Blanc */
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: navy;     /* Bleu marine */
+}
+
+/* === En-tête Principal === */
+#main-header {
+  background-color: black;   
+
+ /* Noir */
+  color: white;               /* Blanc */
+  padding: 20px;
+}
+
+/* === Liens externes === */
+a[target="_blank"] {
+  color: red;  /* Rouge */
+}
+
+/* === Liens === */
+a {
+  color: blue;           /* Bleu */
+  text-decoration: none; /* Retirer le soulignement */
+}
+
+a:hover {
+  color: orange;         /* Orange */
+}
+
+
+/* === Police de base === */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* === Taille du texte === */
+p {
+  font-size: 16px;
+}
+
+
+/* === Arrière-plan === */
+body {
+  background-color: lightgray; /* Gris clair */
+}
+
+
+/* === Marges === */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* === Paddings === */
+.container {
+  padding: 15px;
+}
+
+
+/* === Bordure des images === */
+img {
+  border: 1px solid gray; /* Gris */
+}
+
+
+/* === Liens dans la navigation === */
+nav a {
+  color: white; /* Blanc */
+}
+
+/* === Éléments de liste de premier niveau === */
+.service-list > li {
+  margin-bottom: 15px;
+}
+
+/* === Premier paragraphe après h2 === */
+h2 + p {
+  font-style: italic;
+}
+
+
+/* === Paragraphes suivants un h2 === */
+h2 ~ p {
+  color: darkgray; /* Gris foncé */
+}
+
+
+/* === Liens vers des PDF === */
+a[href$=".pdf"]::after {
+  content: " (PDF)";
+  font-size: 0.9em;
+  color: red; /* Rouge */
+}
+
+/* === Premier élément de la liste des services === */
+.service-list > li:first-child {
+  background-color: lightyellow; /* Jaune clair */
+}
+
+/* === Champs de formulaire invalides === */
+input:invalid,
+textarea:invalid {
+  border-color: red; /* Rouge */
+}
+
+/* === Éléments pairs de la liste des services === */
+.service-list > li:nth-child(even) {
+  background-color: lightgray; /* Gris clair */
+}
+
+/* === Lien actif === */
+a:active {
+  color: darkred; /* Rouge foncé */
+}
+
+/* === Icône avant h2 === */
+h2::before {
+  content: "★ ";
+  color: gold; /* Or */
+}
+
+/* === Première lettre des paragraphes === */
+p::first-letter {
+  font-size: 2em;
+  color: darkblue; /* Bleu foncé */
+}
+
+/* === Icône après les liens externes === */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+/* === Première ligne des paragraphes === */
+p::first-line {
+  font-weight: bold;
+}
+
+/* === Offre spéciale === */
+aside {
+  background-color: lightgreen; /* Vert clair */
+  padding: 15px;               /* Espace intérieur */
+  margin: 20px;                /* Espace extérieur */
+  border: 1px solid darkgreen; /* Bordure vert foncé */
+  width: 200px;                /* Largeur */
+}
+
+/* === Centrer le texte dans l'aside === */
+aside h4,
+aside p {
+  text-align: center;
+}
+
+/* === Taille de police de base === */
+html {
+  font-size: 16px; /* Taille de police de base */
+}
+
+/* === Tailles de police relatives === */
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+}
+
+p {
+  font-size: 1rem; /* 16px */
+}
+
+/* === Conteneur principal === */
+.container {
+  width: 80%;       /* 80% de la largeur du parent */
+  margin: 0 auto;   /* Centrer le conteneur */
+}
+
+
+
+/* === Navigation === */
+nav ul {
+  list-style-type: none; /* Retirer les puces */
+}
+
+nav ul li {
+  display: inline-block; /* Les éléments s'affichent sur une ligne */
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white; /* Blanc */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* === Conteneur principal === */
+main {
+  position: relative; /* Nécessaire pour que l'aside soit positionné par rapport à main */
+}
+
+/* === Offre spéciale === */
+aside {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+
+/* === Section avec hauteur limitée === */
+section.limited {
+  max-height: 200px;
+  overflow: auto;
+}
+
+
+/* === Élément invisible === */
+.invisible {
+  visibility: hidden;
+}
+
+
+/* === Champs du formulaire === */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;               /* Largeur complète */
+  padding: 10px;             /* Padding pour le box model */
+  margin-bottom: 15px;       /* Espace sous chaque champ */
+  border: 1px solid gray;    /* Bordure grise */
+  border-radius: 5px;        /* Bords arrondis */
+  background-color: white;   /* Blanc */
+}
+
+label {
+  display: block;            /* Chaque label sur une nouvelle ligne */
+  margin-bottom: 5px;        /* Espace sous le label */
+  color: black;              /* Noir */
+}
+
+
+/* === Style lors du focus === */
+input:focus,
+textarea:focus {
+  border-color: orange; /* Orange */
+  outline: none;        /* Retirer l'effet par défaut */
+}
+
+/* === Style si le champ est valide === */
+input:valid,
+textarea:valid {
+  border-color: green;  /* Vert */
+}
+
+
+/* === Bouton de soumission === */
+input[type="submit"] {
+  background-color: darkgreen; /* Vert foncé */
+  color: white;                /* Blanc */
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: green;     /* Vert */
+}
+
+
+/* === Styles généraux === */
+body {
+  font-family: Arial, sans-serif; /* Police de base */
+  background-color: hsl(210, 50%, 95%); /* Bleu clair */
+  line-height: 1.6;               /* Hauteur de ligne */
+}
+
+/* === Liens === */
+a {
+  color: rgba(0, 102, 204, 0.8); /* Bleu avec 80% d'opacité */
+  text-decoration: none;          /* Retire le soulignement */
+}
+
+
+h1, h2, h3, h4 {
+  color: #333333; /* Gris foncé */
+}
+
+
+
+/* === Styles pour les écrans de moins de 768px === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;       /* Empile les éléments verticalement */
+  }
+
+  nav ul li {
+    margin-bottom: 10px;          /* Espace entre les éléments */
+    margin-right: 0;              /* Retire la marge droite */
+  }
+
+  .card {
+    flex: 1 1 100%;               /* Les cartes prennent toute la largeur */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+  }
+}
+/* === Styles pour les écrans de moins de 480px === */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;   /* Une seule colonne */
+  }
+
+  .card {
+    padding: 15px;                /* Réduit le padding */
+  }
+
+  h1 {
+    font-size: 1.5em;             /* Réduit la taille du titre */
+  }
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles de base pour les mobiles */
+nav ul {
+  flex-direction: column;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+/* Styles pour les écrans moyens et grands */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+/* === Navigation === */
+nav ul {
+  display: flex;                /* Définit le conteneur flex */
+  flex-direction: row;          /* Aligne les éléments en ligne */
+  justify-content: center;      /* Centre les éléments horizontalement */
+  align-items: center;          /* Centre les éléments verticalement */
+  list-style-type: none;        /* Retire les puces */
+  padding: 0;                   /* Retire le padding */
+}
+
+nav ul li {
+  margin-right: 20px;           /* Espace entre les éléments */
+}
+
+nav ul li:last-child {
+  margin-right: 0;              /* Retire la marge du dernier élément */
+}
+
+nav ul li a {
+  color: white;                 /* Couleur des liens */
+  text-decoration: none;        /* Retire le soulignement */
+  padding: 10px 15px;           /* Ajoute du padding aux liens */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fond blanc transparent au survol */
+  border-radius: 5px;          /* Arrondit les coins */
+}
+
+/* === Cartes === */
+.cards {
+  display: flex;                      /* Conteneur flex */
+  flex-wrap: wrap;                    /* Permet le retour à la ligne */
+  justify-content: space-between;     /* Espace égal entre les cartes */
+  margin: 20px 0;                     /* Marge supérieure et inférieure */
+}
+
+.card {
+  background-color: white;            /* Fond blanc */
+  padding: 20px;                      /* Padding interne */
+  border: 1px solid #ddd;             /* Bordure grise claire */
+  flex: 1 1 calc(33.333% - 20px);     /* Largeur flexible */
+  box-sizing: border-box;             /* Inclut padding et bordure */
+  margin-bottom: 20px;                /* Marge inférieure */
+  border-radius: 5px;                 /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre légère */
+  text-align: center;                 /* Centre le texte */
+}
+
+.card h3 {
+  margin-bottom: 15px;                /* Espace sous le titre */
+}
+
+.card p {
+  margin-bottom: 20px;                /* Espace sous le paragraphe */
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;                   /* Les cartes prennent toute la largeur */
+  }
+}
+
+
+/* === Galerie d'images === */
+.gallery {
+  display: grid;                              /* Conteneur grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colonnes flexibles */
+  gap: 10px;                                  /* Espace entre les éléments */
+  margin: 20px 0;                             /* Marge supérieure et inférieure */
+}
+
+.gallery-item {
+  overflow: hidden;                           /* Cache le débordement */
+  position: relative;                         /* Position relative pour le pseudo-élément */
+}
+
+.gallery-item img {
+  width: 100%;                                /* Image responsive */
+  display: block;                             /* Affiche l'image en bloc */
+}
+
+/* Effet au survol */
+.gallery-item::after {
+  content: attr(alt);                         /* Affiche le texte alternatif */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);                /* Fond semi-transparent */
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);                /* Masque le texte */
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  transform: translateY(0);                   /* Affiche le texte au survol */
+}
+
+
+/* === Bouton animé === */
+.btn-animated {
+  background-color: darkblue;       /* Bleu foncé */
+  color: white;                     /* Couleur du texte */
+  padding: 10px 20px;               /* Padding interne */
+  border: none;                     /* Retire la bordure */
+  cursor: pointer;                  /* Change le curseur au survol */
+  border-radius: 5px;               /* Coins arrondis */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition sur la couleur et la transformation */
+}
+
+.btn-animated:hover {
+  background-color: blue;           /* Change la couleur au survol */
+  transform: scale(1.05);           /* Agrandit légèrement le bouton */
+}
+
+
+/* === Animation de la bannière === */
+.banner {
+  background-color: #e8491d;      /* Rouge orangé */
+  color: white;                   /* Texte blanc */
+  padding: 50px 0;                /* Padding vertical */
+  text-align: center;             /* Centre le texte */
+  animation: slide-in 1s ease-out; /* Applique l'animation */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%); /* Commence au-dessus de l'écran */
+  }
+  to {
+    transform: translateY(0);     /* Termine à sa position initiale */
+  }
+}

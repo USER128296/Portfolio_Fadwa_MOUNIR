@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:#f0e6e2;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#2d1b12;
+}
+
+section{
+    margin-bottom:5%;
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:3% 8%;
+    background-color:#fffaf3;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:bold;
+    color:#5b3924;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:3vw;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2d1b12;
+    font-weight:bold;
+    font-size:1.1rem;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#b58b4b;
+}
+
+#hero{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5% 8%;
+    gap:5%;
+}
+
+.hero-text{
+    width:48%;
+}
+
+.hero-text h2{
+    font-size:3.5rem;
+    margin-bottom:4%;
+}
+
+.hero-text p{
+    font-size:1.3rem;
+    margin-bottom:4%;
+}
+
+.hero-text h3{
+    font-size:2.2rem;
+    font-weight:400;
+    line-height:1.5;
+    margin-bottom:7%;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:5%;
+}
+
+.hero-buttons button{
+    padding:6% 14%;
+    border:none;
+    background:#d7bcbc;
+    color:#2b0d0d;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.hero-buttons button:hover{
+    background:#2b0d0d;
+    color:white;
+}
+
+.hero-image{
+    width:52%;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+#projects{
+    width:100%;
+    padding:3% 8%;
+}
+
+#projects h2{
+    font-size:3rem;
+    margin-bottom:4%;
+}
+
+.projects-container{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    gap:4%;
+}
+
+.project-card{
+    width:30%;
+    background:#ead3d3;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:15vw;
+    object-fit:cover;
+    display:block;
+}
+
+.project-content{
+    padding:6%;
+}
+
+.project-content h3{
+    font-size:2rem;
+    margin-bottom:4%;
+}
+
+.project-content p{
+    font-size:1.1rem;
+    margin-bottom:6%;
+}
+
+.project-content button{
+    padding:5% 10%;
+    border:none;
+    background:#2b0d0d;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.project-content button:hover{
+    background:#5b3924;
+}
+
+#about-contact{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:5% 8%;
+    gap:10%;
+}
+
+.about-text{
+    width:45%;
+}
+
+.about-text h2{
+    font-size:3rem;
+    margin-bottom:4%;
+}
+
+.about-text p{
+    font-size:1.4rem;
+    line-height:1.7;
+}
+
+.contact-container{
+    width:45%;
+}
+
+.contact-container h2{
+    font-size:3rem;
+    margin-bottom:5%;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:4%;
+    border:1px solid #caa;
+    background:transparent;
+    outline:none;
+    font-size:1rem;
+}
+
+form textarea{
+    height:12rem;
+    resize:none;
+}
+
+form button{
+    width:40%;
+    align-self:flex-end;
+    padding:4%;
+    border:none;
+    background:#2b0d0d;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#5b3924;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:1rem;
+        padding:5%;
+    }
+
+    nav ul{
+        gap:1rem;
+    }
+
+    nav a{
+        font-size:1rem;
+    }
+
+    #hero{
+        flex-direction:column;
+        gap:3rem;
+        padding:8% 5%;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-text h2{
+        font-size:2.3rem;
+    }
+
+    .hero-text h3{
+        font-size:1.4rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .hero-buttons button{
+        width:100%;
+    }
+
+    #projects{
+        padding:8% 5%;
+    }
+
+    .projects-container{
+        flex-direction:column;
+    }
+
+    .project-card{
+        width:100%;
+        margin-bottom:7%;
+    }
+
+    .project-card img{
+        height:auto;
+    }
+
+    #about-contact{
+        flex-direction:column;
+        padding:8% 5%;
+    }
+
+    .about-text,
+    .contact-container{
+        width:100%;
+    }
+
+    .about-text{
+        margin-bottom:10%;
+    }
+
+    .about-text h2,
+    .contact-container h2,
+    #projects h2{
+        font-size:2.3rem;
+    }
+
+    .about-text p{
+        font-size:1.1rem;
+    }
+
+    form button{
+        width:50%;
+    }
+}
